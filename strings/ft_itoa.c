@@ -6,7 +6,7 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 17:24:31 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/23 12:56:23 by thepaqui         ###   ########.fr       */
+/*   Updated: 2022/11/23 14:11:20 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -45,7 +45,7 @@ char	*ft_itoa(int n)
 		return (ft_strdup("-2147483648"));
 	if (n == 0)
 		return (ft_strdup("0"));
-	temp = ft_calloc(ft_find_malloc_size(n), sizeof(*res));
+	temp = ft_calloc(ft_find_malloc_size(n), sizeof(char));
 	if (!temp)
 		return (NULL);
 	res = temp;

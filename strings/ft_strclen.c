@@ -1,37 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strclen.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/10 16:20:10 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/23 14:18:31 by thepaqui         ###   ########.fr       */
+/*   Created: 2022/11/23 14:19:56 by thepaqui          #+#    #+#             */
+/*   Updated: 2022/11/23 14:51:16 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-char	*ft_strnstr(const char *str, const char *to_find, size_t len)
+size_t	ft_strclen(const char *str, const char *set)
 {
 	size_t	i;
-	size_t	j;
-	size_t	k;
 
 	if (!str)
-		return (NULL);
-	if (!to_find || !*to_find)
-		return ((char *)str);
+		return (0);
+	if (!set || !*set)
+		return (ft_strlen(str))
 	i = 0;
-	k = 0;
-	while (k < len && str[i])
-	{
-		j = 0;
-		while (to_find[j] && str[i + j] && str[i + j] == to_find[j])
-			j++;
-		if (to_find[j] == 0 && i + j <= len)
-			return ((char *)&str[i]);
+	while (str[i] && !ft_isinset((int)str[i], set))
 		i++;
-		k++;
-	}
-	return (NULL);
+	return (i);
 }

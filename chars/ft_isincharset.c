@@ -1,30 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_isincharset.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
+/*   By: thepaqui <thepaqui@student.42nice.f>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/10 11:31:16 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/23 14:12:35 by thepaqui         ###   ########.fr       */
+/*   Created: 2022/11/23 14:23:55 by thepaqui          #+#    #+#             */
+/*   Updated: 2022/11/23 14:30:57 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+int	ft_isincharset(int c, const char *set)
 {
-	int	t_len;
-
-	if (!s)
-		return (NULL);
-	t_len = ft_strlen(s);
-	if (c == 0)
-		return ((char *)s + t_len);
-	while (*s)
+	if (!set)
+		return (0);
+	while (*set)
 	{
-		if (*s == (char)c)
-			return ((char *)s);
-		s++;
+		if (c == (int)(*set))
+			return (1);
+		set++;
 	}
-	return (NULL);
+	return (0);
 }
