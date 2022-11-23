@@ -1,6 +1,9 @@
 *.o
 *.a
+*.out
 *.pdf
 *.swp
 *.swo
+*.txt
+main.c
 .*
