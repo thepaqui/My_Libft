@@ -6,15 +6,14 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 10:14:00 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/10 09:55:17 by thepaqui         ###   ########.fr       */
+/*   Updated: 2022/11/23 12:06:15 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (!s)
-		return ;
-	while (*s)
-		ft_putchar_fd(*s++, fd);
+	if (s && fd != -1)
+		while (*s)
+			ft_putchar_fd(*s++, fd);
 }

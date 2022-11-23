@@ -6,12 +6,13 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 17:54:13 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/10 09:55:26 by thepaqui         ###   ########.fr       */
+/*   Updated: 2022/11/23 12:03:12 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {
-	write(fd, &c, 1);
+	if (fd != -1)
+		write(fd, &c, 1);
 }
