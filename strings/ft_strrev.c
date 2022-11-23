@@ -1,29 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/10 14:17:36 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/23 12:50:15 by thepaqui         ###   ########.fr       */
+/*   Created: 2022/11/23 12:53:18 by thepaqui          #+#    #+#             */
+/*   Updated: 2022/11/23 12:56:11 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+void	ft_strrev(char *s)
 {
 	size_t	i;
+	size_t	len;
+	char	tmp;
 
-	if ((!s1 && !s2) || !n)
-		return (0);
-	i = 0;
-	while (i < n && (s1[i] || s2[i]))
+	if (!s)
+		return ;
+	i = -1;
+	len = ft_strlen(str);
+	while (++i < len / 2)
 	{
-		if (s1[i] == s2[i])
-			i++;
-		else
-			return (((unsigned char)s1[i] - (unsigned char)s2[i]));
+		tmp = str[i];
+		str[i] = str[len - i - 1];
+		str[len - i - 1] = tmp;
 	}
-	return (0);
 }

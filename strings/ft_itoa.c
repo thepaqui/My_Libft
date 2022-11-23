@@ -6,27 +6,10 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 17:24:31 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/13 15:17:26 by thepaqui         ###   ########.fr       */
+/*   Updated: 2022/11/23 12:56:23 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-
-static void	ft_strrev(char *str)
-{
-	size_t	i;
-	size_t	len;
-	char	temp;
-
-	i = 0;
-	len = ft_strlen(str);
-	while (i < len / 2)
-	{
-		temp = str[i];
-		str[i] = str[len - i - 1];
-		str[len - i - 1] = temp;
-		i++;
-	}
-}
 
 static void	ft_finish_itoa_str(char *str, int sign)
 {
@@ -62,7 +45,7 @@ char	*ft_itoa(int n)
 		return (ft_strdup("-2147483648"));
 	if (n == 0)
 		return (ft_strdup("0"));
-	temp = malloc(ft_find_malloc_size(n) * sizeof(*res));
+	temp = ft_calloc(ft_find_malloc_size(n), sizeof(*res));
 	if (!temp)
 		return (NULL);
 	res = temp;

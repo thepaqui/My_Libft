@@ -6,7 +6,7 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 17:22:25 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/11 14:34:29 by thepaqui         ###   ########.fr       */
+/*   Updated: 2022/11/23 12:51:20 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ int	ft_atoi(const char *str)
 	int	sign;
 	int	res;
 
+	if (!str)
+		return (0);
 	i = 0;
 	sign = 1;
 	res = 0;
