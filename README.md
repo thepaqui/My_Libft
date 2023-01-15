@@ -1,3 +1,3 @@
 # My_Libft
 
-My personal Libft, last updated on November 23rd 2022, at 11:52.
+My personal Libft, last updated on January 15th 2023, at 12:57.
