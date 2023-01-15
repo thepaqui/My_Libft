@@ -39,19 +39,6 @@ static int	ft_strcount(char const *str, char *set)
 	return (str_count);
 }
 
-static char	**ft_free_tab(char **tab, int index)
-{
-	while (index >= 0)
-	{
-		if (tab[index])
-			free(tab[index]);
-		index--;
-	}
-	if (tab)
-		free(tab);
-	return (NULL);
-}
-
 char	**ft_split(char const *s, char *set)
 {
 	char	**tab;
