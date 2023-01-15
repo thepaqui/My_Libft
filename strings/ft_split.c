@@ -60,7 +60,7 @@ char	**ft_split(char const *s, char *set)
 		if (!tab[i])
 			return (ft_free_tab(tab, i));
 		ft_strlcpy(tab[i++], &s[j], ft_strclen(&s[j], set) + 1);
-		while (!ft_isinset((int)s[j], set))
+		while (s[j] && !ft_isinset((int)s[j], set))
 			j++;
 	}
 	tab[i] = NULL;
