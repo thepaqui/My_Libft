@@ -18,7 +18,7 @@ size_t	ft_strclen(const char *str, const char *set)
 	if (!str)
 		return (0);
 	if (!set || !*set)
-		return (ft_strlen(str))
+		return (ft_strlen(str));
 	i = 0;
 	while (str[i] && !ft_isinset((int)str[i], set))
 		i++;
