@@ -13,13 +13,15 @@
 
 char	**ft_free_tab(char **tab, int index)
 {
+	if (!tab)
+		return (NULL);
 	if (index == -1)
-  {
-    while (tab[++index])
-      free(tab[index]);
-    index = -1;
-  }
-  while (index >= 0)
+	{
+		while (tab[++index])
+			free(tab[index]);
+		index = -1;
+	}
+	while (index >= 0)
 	{
 		if (tab[index])
 			free(tab[index]);
