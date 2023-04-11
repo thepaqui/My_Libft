@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-void	ft_strrev(char *s)
+void	ft_strrev(char *str)
 {
 	size_t	i;
 	size_t	len;
