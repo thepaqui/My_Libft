@@ -17,7 +17,7 @@ void	ft_strrev(char *str)
 	size_t	len;
 	char	tmp;
 
-	if (!s)
+	if (!str)
 		return ;
 	i = -1;
 	len = ft_strlen(str);
