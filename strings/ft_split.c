@@ -49,7 +49,7 @@ char	**ft_split(char const *s, char *set)
 		return (NULL);
 	tab = ft_calloc((ft_strcount(s, set) + 1), sizeof(char *));
 	if (!tab)
-		return (0);
+		return (NULL);
 	i = 0;
 	j = 0;
 	while (i < ft_strcount(s, set) && s[j])
