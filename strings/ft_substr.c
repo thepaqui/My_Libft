@@ -6,9 +6,10 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 13:46:45 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/13 12:05:39 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:52:40 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)

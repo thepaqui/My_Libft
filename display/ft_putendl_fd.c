@@ -6,14 +6,15 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 10:35:00 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/23 12:02:38 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:54:19 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	if (s && fd != -1)
+	if (s && fd >= 0)
 	{
 		ft_putstr_fd(s, fd);
 		ft_putchar_fd('\n', fd);

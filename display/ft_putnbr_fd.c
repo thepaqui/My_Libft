@@ -6,9 +6,10 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 10:38:00 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/10 14:18:54 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:54:43 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)

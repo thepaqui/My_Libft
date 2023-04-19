@@ -6,9 +6,10 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 13:50:52 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/10 15:46:26 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:52:56 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)

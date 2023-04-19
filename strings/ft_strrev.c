@@ -6,9 +6,10 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 12:53:18 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/23 12:56:11 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:52:17 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_strrev(char *str)

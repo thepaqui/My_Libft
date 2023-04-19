@@ -6,9 +6,10 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 12:18:17 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/13 10:18:19 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:52:53 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)

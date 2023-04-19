@@ -6,18 +6,19 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 10:19:09 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/23 12:48:41 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:50:47 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+int	ft_strlcat(char *dst, const char *src, int dstsize)
 {
-	size_t	i;
-	size_t	j;
-	size_t	len;
+	int	i;
+	int	j;
+	int	len;
 
-	if (!dst && !dstsize)
+	if (!dst && dstsize <= 0)
 		return (0);
 	if (!src)
 		return (dstsize);

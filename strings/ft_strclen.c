@@ -6,9 +6,10 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 14:19:56 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/23 14:51:16 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:51:40 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strclen(const char *str, const char *set)

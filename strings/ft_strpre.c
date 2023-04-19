@@ -1,27 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_strpre.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/13 17:31:45 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/13 19:32:29 by thepaqui         ###   ########.fr       */
+/*   Created: 2023/04/19 15:40:52 by thepaqui          #+#    #+#             */
+/*   Updated: 2023/04/19 15:41:45 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+char	**ft_strpre(char **tab, char *pre)
 {
-	t_list	*temp;
+	char	*tmp;
+	int		i;
 
-	if (!lst || !new)
-		return ;
-	if (!*lst)
+	if (!tab)
+		return (NULL);
+	if (!pre || !*pre)
+		return (tab);
+	i = -1;
+	while (tab[++i])
 	{
-		*lst = new;
-		return ;
+		tmp = tab[i];
+		tab[i] = ft_strjoin(pre, tab[i]);
+		free(tmp);
+		if (!tab[i])
+			return (ft_free_tab(tab, -1));
 	}
-	temp = ft_lstlast(*lst);
-	temp->next = new;
+	return (tab);
 }

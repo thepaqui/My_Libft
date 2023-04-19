@@ -6,9 +6,10 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:09:17 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/23 14:48:53 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:51:34 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 static int	ft_strcount(char const *str, char *set)

@@ -6,9 +6,10 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/13 15:23:28 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/13 15:42:21 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:52:01 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))

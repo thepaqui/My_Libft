@@ -6,9 +6,10 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 11:31:16 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/23 14:12:35 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:51:37 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)

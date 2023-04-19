@@ -6,9 +6,10 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/15 12:50:25 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/01/15 12:54:24 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:51:24 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	**ft_free_tab(char **tab, int index)

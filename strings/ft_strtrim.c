@@ -6,9 +6,10 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 14:36:49 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/13 14:41:58 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:52:36 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 static int	ft_ischarinset(int c, char const *set)

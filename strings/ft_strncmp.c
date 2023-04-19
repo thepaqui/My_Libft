@@ -6,9 +6,10 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 14:17:36 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/23 12:50:15 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:52:03 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

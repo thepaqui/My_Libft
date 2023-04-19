@@ -6,9 +6,10 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 15:52:24 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/10 16:16:48 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:52:49 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

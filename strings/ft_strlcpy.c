@@ -6,9 +6,10 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 10:07:00 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/23 12:47:07 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:50:40 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_strlcpy(char *dst, const char *src, int dstsize)
@@ -16,7 +17,7 @@ int	ft_strlcpy(char *dst, const char *src, int dstsize)
 	int	i;
 	int	j;
 
-	if (!dst && !dstsize)
+	if (!dst && dstsize <= 0)
 		return (0);
 	if (!src)
 		return (dstsize);

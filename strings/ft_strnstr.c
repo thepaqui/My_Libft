@@ -6,9 +6,10 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 16:20:10 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/23 14:18:31 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:52:09 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strnstr(const char *str, const char *to_find, size_t len)

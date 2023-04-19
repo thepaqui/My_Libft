@@ -6,9 +6,10 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 14:11:08 by thepaqui          #+#    #+#             */
-/*   Updated: 2022/11/23 14:19:07 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 15:51:47 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
