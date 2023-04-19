@@ -6,7 +6,7 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 12:36:41 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/04/19 16:15:06 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/19 16:34:01 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,5 +87,8 @@ void	*ft_memchr(const void *s, int c, size_t n);
 /* Math */
 double	degree_to_radian(double degree);
 double	radian_to_degree(double radian);
+double	distance_2d(double x_a, double y_a, double x_b, double y_b);
+double	distance_3d(double x_a, double y_a, double z_a, double x_b, double y_b, double z_b);
+double	distance_long_lat(double long_a, double lat_a, double long_b, double lat_b, double radius);
 
 #endif
