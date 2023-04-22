@@ -6,7 +6,7 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 11:31:16 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/04/19 15:51:37 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/22 15:07:54 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strchr(const char *s, int c)
 	if (!s)
 		return (NULL);
 	t_len = ft_strlen(s);
-	if (c == 0)
+	if (!c)
 		return ((char *)s + t_len);
 	while (*s)
 	{
