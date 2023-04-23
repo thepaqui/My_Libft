@@ -6,7 +6,7 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 12:36:41 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/04/23 15:40:17 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/23 15:51:14 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ void	ft_putnbr(int n);
 /* Strings */
 size_t	ft_strlen(const char *s);
 size_t	ft_strclen(const char *str, const char *set);
+size_t	ft_strtablen(const char **tab);
 
 int		ft_strlcpy(char *dst, const char *src, int dstsize);
 int		ft_strlcat(char *dst, const char *src, int dstsize);
