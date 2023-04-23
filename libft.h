@@ -6,7 +6,7 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 12:36:41 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/04/19 16:34:01 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/23 15:40:17 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ char	**ft_strpre(char **tab, char *pre);
 char	**ft_strsuf(char **tab, char *suf);
 char	**ft_split(char const *s, char *set);
 char	**ft_split_with_empty(char const *s, char *set);
-char	**ft_free_tab(char **tab, int index);
+char	**free_tab(char **tab, int index);
 
 char	*ft_strtrim(char const *s1, char const *set);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));

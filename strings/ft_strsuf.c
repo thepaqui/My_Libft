@@ -6,7 +6,7 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/15 12:54:51 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/04/19 15:40:20 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/23 15:40:17 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	**ft_strsuf(char **tab, char *suf)
 		tab[i] = ft_strjoin(tab[i], suf);
 		free(tmp);
 		if (!tab[i])
-			return (ft_free_tab(tab, -1));
+			return (free_tab(tab, -1));
 	}
 	return (tab);
 }

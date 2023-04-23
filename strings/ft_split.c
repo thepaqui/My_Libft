@@ -6,7 +6,7 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 15:09:17 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/04/19 15:51:34 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/23 15:40:17 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ char	**ft_split(char const *s, char *set)
 			j++;
 		tab[i] = ft_calloc((ft_strclen(&s[j], set) + 1), sizeof(char));
 		if (!tab[i])
-			return (ft_free_tab(tab, i));
+			return (free_tab(tab, i));
 		ft_strlcpy(tab[i++], &s[j], ft_strclen(&s[j], set) + 1);
 		while (s[j] && !ft_isinset((int)s[j], set))
 			j++;
