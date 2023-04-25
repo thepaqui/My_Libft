@@ -6,7 +6,7 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 12:36:41 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/04/23 15:51:14 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/04/25 13:18:06 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,6 +86,8 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 
 /* Math */
+int		is_even(long long int n);
+int		is_odd(long long int n);
 double	degree_to_radian(double degree);
 double	radian_to_degree(double radian);
 double	distance_2d(double x_a, double y_a, double x_b, double y_b);
