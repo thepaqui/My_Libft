@@ -6,7 +6,7 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 12:36:41 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/04/27 18:18:10 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/06/11 17:59:02 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,8 @@ char			**ft_strpre(char **tab, char *pre);
 char			**ft_strsuf(char **tab, char *suf);
 char			**ft_split(char const *s, char *set);
 char			**ft_split_with_empty(char const *s, char *set);
+int				find_shortest_str(char **tab);
+int				find_longest_str(char **tab);
 char			**free_tab(char **tab, int index);
 
 char			*ft_strtrim(char const *s1, char const *set);
