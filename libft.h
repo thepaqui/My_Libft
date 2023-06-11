@@ -6,7 +6,7 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 12:36:41 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/06/11 17:59:02 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/06/11 18:18:18 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ char			*ft_strdup(const char *str);
 char			*ft_strndup(const char *str, int n);
 char			**ft_strtabdup(const char **tab);
 
+int				ft_str_isinset(char *str, char *set);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
