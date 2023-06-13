@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isspace.c                                       :+:      :+:    :+:   */
+/*   skip_spaces.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/01 14:36:41 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/06/13 19:19:12 by thepaqui         ###   ########.fr       */
+/*   Created: 2023/06/13 19:17:33 by thepaqui          #+#    #+#             */
+/*   Updated: 2023/06/13 19:20:42 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isspace(int c)
+void	skip_spaces(char *s, int *index)
 {
-	if (ft_isinset(c, " \n\t\v\r\f"))
-		return (1);
-	return (0);
+	int	i;
+
+	if (!s || !index)
+		return ;
+	i = *index;
+	while (s[i] && ft_isspace(s[i]))
+		i++;
+	*index = i;
 }
