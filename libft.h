@@ -6,7 +6,7 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 12:36:41 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/06/13 19:19:24 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/06/13 20:03:48 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,8 @@ char			*ft_strndup(const char *str, int n);
 char			**ft_strtabdup(const char **tab);
 
 void			skip_spaces(char *s, int *index);
+void			skip_set(char *s, int *index, char *set);
+void			skip_to_set(char *s, int *index, char *set);
 int				ft_str_isinset(char *str, char *set);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
