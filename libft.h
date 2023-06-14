@@ -6,7 +6,7 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 12:36:41 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/06/13 20:03:48 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/06/14 18:51:08 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,19 +33,35 @@ int				ft_tolower(int c);
 void			ft_putchar_fd(char c, int fd);
 void			ft_putchar(char c);
 
+void			ft_putnbr_fd(int n, int fd);
+void			ft_putnbr(int n);
+
 void			ft_putstr_fd(char *s, int fd);
 void			ft_putstr(char *s);
 
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putendl(char *s);
 
-void			ft_putnbr_fd(int n, int fd);
-void			ft_putnbr(int n);
+void			ft_putstrtab(char **tab);
+void			ft_putstrtab_fd(char **tab, int fd);
+
+void			ft_putendltab(char **tab);
+void			ft_putendltab_fd(char **tab, int fd);
+
+/* String arrays */
+size_t			ft_strtablen(const char **tab);
+char			**ft_strtabdup(const char **tab);
+int				find_shortest_str(char **tab);
+int				find_longest_str(char **tab);
+
+char			**ft_strpre(char **tab, char *pre);
+char			**ft_strsuf(char **tab, char *suf);
+void			ft_strtab_pad_start(char **tab, char pad);
+void			ft_strtab_pad_end(char **tab, char pad);
 
 /* Strings */
 size_t			ft_strlen(const char *s);
 size_t			ft_strclen(const char *str, const char *set);
-size_t			ft_strtablen(const char **tab);
 
 int				ft_strlcpy(char *dst, const char *src, int dstsize);
 int				ft_strlcat(char *dst, const char *src, int dstsize);
@@ -57,7 +73,6 @@ char			*ft_itoa(int n);
 
 char			*ft_strdup(const char *str);
 char			*ft_strndup(const char *str, int n);
-char			**ft_strtabdup(const char **tab);
 
 void			skip_spaces(char *s, int *index);
 void			skip_set(char *s, int *index, char *set);
@@ -69,13 +84,8 @@ char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strnstr(const char *str, const char *to_find, size_t len);
 
 char			*ft_strjoin(char const *s1, char const *s2);
-char			**ft_strpre(char **tab, char *pre);
-char			**ft_strsuf(char **tab, char *suf);
 char			**ft_split(char const *s, char *set);
 char			**ft_split_with_empty(char const *s, char *set);
-int				find_shortest_str(char **tab);
-int				find_longest_str(char **tab);
-char			**free_tab(char **tab, int index);
 
 char			*ft_strtrim(char const *s1, char const *set);
 void			ft_striteri(char *s, void (*f)(unsigned int, char*));
@@ -85,6 +95,8 @@ void			replace_first_x_with_y(char *s, char x, char y);
 void			ft_strrev(char *s);
 
 /* Memory */
+void			*free_ptr(void *ptr);
+char			**free_tab(char **tab, int index);
 void			*ft_calloc(size_t count, size_t size);
 void			*ft_memset(void *b, int c, size_t len);
 void			ft_bzero(void *s, size_t n);
