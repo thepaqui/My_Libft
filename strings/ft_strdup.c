@@ -6,7 +6,7 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 11:48:04 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/04/19 15:51:42 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/06/14 19:18:35 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strdup(const char *str)
 	if (!str)
 		return (NULL);
 	size = ft_strlen(str) + 1;
-	copy = malloc(sizeof(*copy) * size);
+	copy = ft_calloc(sizeof(*copy) * size);
 	if (!copy)
 		return (copy);
 	ft_strlcpy(copy, str, size);
