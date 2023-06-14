@@ -6,22 +6,11 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 14:36:49 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/04/19 15:52:36 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/06/14 18:47:27 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	ft_ischarinset(int c, char const *set)
-{
-	int	i;
-
-	i = -1;
-	while (set[++i])
-		if (set[i] == (char)c)
-			return (1);
-	return (0);
-}
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -32,10 +21,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!s1)
 		return (NULL);
 	start = 0;
-	while (s1[start] && ft_ischarinset((int)s1[start], set))
+	while (s1[start] && ft_isinset(s1[start], set))
 		start++;
 	len = ft_strlen(s1);
-	while (ft_ischarinset((int)s1[len - 1], set))
+	while (ft_isinset(s1[len - 1], set))
 	{
 		len--;
 		if (!len)
