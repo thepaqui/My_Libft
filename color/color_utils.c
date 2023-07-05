@@ -6,13 +6,14 @@
 /*   By: thepaqui <thepaqui@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 16:40:25 by thepaqui          #+#    #+#             */
-/*   Updated: 2023/07/05 16:44:18 by thepaqui         ###   ########.fr       */
+/*   Updated: 2023/07/05 16:58:39 by thepaqui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	change_alpha(int color, int alpha)
 {
-	return (alpha << 24 | color);
+	return (alpha << 24 | ((color >> 16) & 0xFF) << 16
+		| ((color >> 8) & 0xFF) << 8 | color & 0xFF);
 }
 
 int	get_argb(int a, int r, int g, int b)
